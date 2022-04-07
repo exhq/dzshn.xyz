@@ -3,51 +3,95 @@
 </script>
 
 <main>
-    <h1>hi,</h1>
-    <img id="homu" src={homu} alt="homura plushie (madoka magica character)" />
+    <h1>!?</h1>
+    <p>
+        <code>ヾ(^o^ )</code>, I am dzshn (pronounced <code>/ziː/</code>).
+        latina, minor, she/her etc.
+        <br /><br />
+        I like coding stuff, I also like making coding atrocities, sometimes.
+    </p>
     <h2>social stuff</h2>
+    <p>you might find me here</p>
     <div class="socials">
-        <a target="_blank" href="https://discord.gg/qXPm32cHUv">discord</a>
-        <a target="_blank" href="mailto:zshn@pm.me">zshn@pm.me</a>
-        <a target="_blank" href="https://github.com/dzshn">github</a>
-        <a target="_blank" href="https://twitter.com/dzshn_">twitter</a>
-        <a target="_blank" href="https://reddit.com/u/dzsh">reddit</a>
-        <a target="_blank" href="https://instagram.com/dzshn">instagram</a>
-        <a target="_blank" href="https://t.me/dzshn">telegram</a>
-    </div>
-    <footer>
-        <a target="_blank" href="https://github.com/dzshn/dzshn.xyz">
-            view source
+        <a
+            target="_blank"
+            href="https://discord.gg/qXPm32cHUv"
+            title=".gg/qXPm32cHUv"
+        >
+            discord
         </a>
-        -*- built w/
+        <a target="_blank" href="mailto:zshn@proton.me" title="zshn@proton.me">
+            email
+        </a>
+        <a target="_blank" href="https://github.com/dzshn" title="dzshn">
+            github
+        </a>
+        <a target="_blank" href="https://twitter.com/dzshn_" title="@dzshn_">
+            twitter
+        </a>
+        <a target="_blank" href="https://reddit.com/u/dzsh" title="u/dzsh">
+            reddit
+        </a>
+        <a target="_blank" href="https://t.me/dzshn" title="@dzshn">
+            telegram
+        </a>
+    </div>
+    <div>
+        <img
+            id="homu"
+            src={homu}
+            alt="homura plushie (madoka magica character)"
+        />
+    </div>
+</main>
+<footer>
+    <span>
+        built w/
         <a target="_blank" href="https://vitejs.dev">vite</a>
         +
         <a target="_blank" href="https://svelte.dev">svelte</a>
-        -*- (c)
+    </span>
+    <span>
+        (c)
         <a
             target="_blank"
-            href="https://github.com/dzshn/dzshn.xyz/blobl/main/LICENSE"
+            href="https://github.com/dzshn/dzshn.xyz/blob/main/LICENSE"
         >
             MIT License
         </a>
-    </footer>
-</main>
+    </span>
+    <span>
+        <a target="_blank" href="https://github.com/dzshn/dzshn.xyz">
+            [view source]
+        </a>
+    </span>
+    <span>(under reconstruction!)</span>
+</footer>
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans:wght@400;700&family=Quicksand:wght@400;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans:wght@400;700&display=swap");
 
     :root {
         background: #151515;
-        color: white;
+        color: #e0e0e0;
         font-family: "Noto Sans";
         font-size: 16pt;
-        padding: 0px 20px;
+        margin: 0;
+    }
+
+    code {
+        font-family: "Fira Code", monospace;
+    }
+
+    main {
+        width: calc(100vw - 40px);
+        margin: auto;
     }
 
     h1,
     h2 {
         border-bottom: 4px dotted #fa50a0;
-        font-family: "Quicksand";
+        font-family: "Fira Code", monospace;
         padding: 20px 2px 0px;
         width: -webkit-fit-content;
         width: -moz-fit-content;
@@ -65,44 +109,45 @@
     #homu {
         max-width: 100%;
         width: 160pt;
-    }
-
-    #homu:hover {
-        animation: spiiin 3600s linear infinite;
-    }
-
-    @keyframes spiiin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
+        margin: 32pt 0;
     }
 
     .socials {
         display: flex;
         font-family: "Fira Code", monospace;
         flex-wrap: wrap;
-        max-width: 640pt;
+        max-width: 320pt;
         min-width: 160pt;
-        width: 80%;
     }
     .socials * {
-        flex-basis: 160pt;
+        width: 160pt;
     }
     .socials *::before {
-        color: white;
+        color: #e0e0e0;
         content: "@ ";
     }
 
     footer {
         color: #a0a0a0;
         font-family: "Fira Code", monospace;
+        font-size: 14pt;
         margin-top: 64pt;
         text-align: center;
     }
     footer a {
         color: #e0e0e0;
+    }
+    @media (min-width: 1024px) {
+        footer span:nth-child(1n + 2)::before {
+            color: #a0a0a0;
+            content: "-*- ";
+        }
+    }
+    @media not (min-width: 1024px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
     }
 </style>
