@@ -1,47 +1,35 @@
 <script>
-    import homu from "./assets/hameru.jpeg";
+    import Ref from "./lib/Ref.svelte";
+
+    const links = [
+        ["discord", "https://discord.gg/qXPm32cHUv", ".gg/qXPm32cHUv"],
+        ["email", "mailto:zshn@proton.me", "zshn@proton.me"],
+        ["github", "https://github.com/dzshn", "dzshn"],
+        ["twitter", "https://twitter.com/dzshn_", "@dzshn_"],
+        ["reddit", "https://reddit.com/u/dzsh", "u/dzsh"],
+        ["telegram", "https://t.me/dzshn", "@dzshn"],
+    ];
 </script>
 
 <main>
     <h1>!?</h1>
     <p>
-        <code>ヾ(^o^ )</code>, I am dzshn (pronounced <code>/ziː/</code>).
-        latina, minor, she/her etc.
-        <br /><br />
-        I like coding stuff, I also like making coding atrocities, sometimes.
+        <code>ヾ(^o^ )</code>, my name is dzshn (pronounced <code>/ziː/</code>).
+        latina, trans, sapphic, minor, she/her, etc.<Ref cei /> <br />
+        <br />
+        I like coding stuff, I also like making coding atrocities,<Ref cn />
+        sometimes. <br />
+        I'm also into linguistics, some nlp and a bitter bit of webdev.<br />
+        I was once terminally addicted to Tetris and now a part-time Tetris nerd.<Ref
+            explain
+        />
     </p>
     <h2>social stuff</h2>
-    <p>you might find me here</p>
+    <p>you might find me here,,</p>
     <div class="socials">
-        <a
-            target="_blank"
-            href="https://discord.gg/qXPm32cHUv"
-            title=".gg/qXPm32cHUv"
-        >
-            discord
-        </a>
-        <a target="_blank" href="mailto:zshn@proton.me" title="zshn@proton.me">
-            email
-        </a>
-        <a target="_blank" href="https://github.com/dzshn" title="dzshn">
-            github
-        </a>
-        <a target="_blank" href="https://twitter.com/dzshn_" title="@dzshn_">
-            twitter
-        </a>
-        <a target="_blank" href="https://reddit.com/u/dzsh" title="u/dzsh">
-            reddit
-        </a>
-        <a target="_blank" href="https://t.me/dzshn" title="@dzshn">
-            telegram
-        </a>
-    </div>
-    <div>
-        <img
-            id="homu"
-            src={homu}
-            alt="homura plushie (madoka magica character)"
-        />
+        {#each links as [name, href, title]}
+            <a target="_blank" {href} {title}>{name}</a>
+        {/each}
     </div>
 </main>
 <footer>
@@ -65,7 +53,7 @@
             [view source]
         </a>
     </span>
-    <span>(under reconstruction!)</span>
+    <span>(under construction!)</span>
 </footer>
 
 <style>
@@ -104,12 +92,6 @@
     }
     a:hover {
         color: #fb82bb;
-    }
-
-    #homu {
-        max-width: 100%;
-        width: 160pt;
-        margin: 32pt 0;
     }
 
     .socials {
