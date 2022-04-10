@@ -9,6 +9,8 @@
 </main>
 
 <style>
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
+
     :root {
         background: #151515;
         color: #e0e0e0;
