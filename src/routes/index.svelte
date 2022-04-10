@@ -1,5 +1,6 @@
 <script>
-    import Ref from "./lib/Ref.svelte";
+    import Ref from "$lib/Ref.svelte";
+    import Footer from "$lib/Footer.svelte";
 
     const links = [
         ["discord", "https://discord.gg/qXPm32cHUv", ".gg/qXPm32cHUv"],
@@ -10,6 +11,10 @@
         ["telegram", "https://t.me/dzshn", "@dzshn"],
     ];
 </script>
+
+<svelte:head>
+    <title>dzshn.xyz</title>
+</svelte:head>
 
 <main>
     <h1>!?</h1>
@@ -32,33 +37,9 @@
         {/each}
     </div>
 </main>
-<footer>
-    <span>
-        built w/
-        <a target="_blank" href="https://vitejs.dev">vite</a>
-        +
-        <a target="_blank" href="https://svelte.dev">svelte</a>
-    </span>
-    <span>
-        (c)
-        <a
-            target="_blank"
-            href="https://github.com/dzshn/dzshn.xyz/blob/main/LICENSE"
-        >
-            MIT License
-        </a>
-    </span>
-    <span>
-        <a target="_blank" href="https://github.com/dzshn/dzshn.xyz">
-            [view source]
-        </a>
-    </span>
-    <span>(under construction!)</span>
-</footer>
+<Footer />
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans:wght@400;700&display=swap");
-
     :root {
         background: #151515;
         color: #e0e0e0;
@@ -107,29 +88,5 @@
     .socials *::before {
         color: #e0e0e0;
         content: "@ ";
-    }
-
-    footer {
-        color: #a0a0a0;
-        font-family: "Fira Code", monospace;
-        font-size: 14pt;
-        margin-top: 64pt;
-        text-align: center;
-    }
-    footer a {
-        color: #e0e0e0;
-    }
-    @media (min-width: 1024px) {
-        footer span:nth-child(1n + 2)::before {
-            color: #a0a0a0;
-            content: "-*- ";
-        }
-    }
-    @media not (min-width: 1024px) {
-        footer {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-        }
     }
 </style>
