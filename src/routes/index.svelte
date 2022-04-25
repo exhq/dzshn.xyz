@@ -3,12 +3,12 @@
     import Footer from "$lib/Footer.svelte";
 
     const links = [
-        ["discord", "https://discord.gg/qXPm32cHUv", ".gg/qXPm32cHUv"],
+        ["mastodon", "https://toot.cat/@dzshn", "@dzshn@toot.cat", {"rel": "me"}],
         ["email", "mailto:zshn@proton.me", "zshn@proton.me"],
         ["github", "https://github.com/dzshn", "dzshn"],
-        ["twitter", "https://twitter.com/dzshn_", "@dzshn_"],
-        ["reddit", "https://reddit.com/u/dzsh", "u/dzsh"],
         ["telegram", "https://t.me/dzshn", "@dzshn"],
+        ["reddit", "https://reddit.com/u/dzsh", "u/dzsh"],
+        ["discord", "https://discord.gg/qXPm32cHUv", ".gg/qXPm32cHUv"],
     ];
 </script>
 
@@ -32,8 +32,8 @@
     <h2>social stuff</h2>
     <p>you might find me here,,</p>
     <div class="socials">
-        {#each links as [name, href, title]}
-            <a target="_blank" {href} {title}>{name}</a>
+        {#each links as [name, href, title, extra]}
+            <a target="_blank" {href} {title} {...extra}>{name}</a>
         {/each}
     </div>
 </main>
