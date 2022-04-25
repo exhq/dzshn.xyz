@@ -12,9 +12,7 @@
     "devDependencies": {
         "@sveltejs/adapter-static": "next",
         "@sveltejs/kit": "next",
+        "prettier": "2.6.2",
         "svelte": "^3.44.0"
-    },
-    "prettier": {
-        "tabWidth": 4
     }
 }
