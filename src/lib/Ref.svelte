@@ -1,11 +1,11 @@
 <script>
     export let cn = false;
-    export let cei = false;
+    export let ce = false;
     export let explain = false;
 </script>
 
 <sup>
-    {#if cei}
+    {#if ce}
         [<i
             ><a
                 target="_blank"

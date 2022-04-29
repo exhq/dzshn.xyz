@@ -36,14 +36,14 @@
         color: #fb82bb;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 800pt) {
         footer span:nth-child(1n + 2)::before {
             color: #a0a0a0;
             content: "-*- ";
         }
     }
 
-    @media not (min-width: 1024px) {
+    @media (max-width: 800pt) {
         footer {
             display: flex;
             flex-direction: column;

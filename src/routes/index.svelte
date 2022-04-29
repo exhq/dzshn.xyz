@@ -20,7 +20,7 @@
     <h1>!?</h1>
     <p>
         <code>ヾ(^o^ )</code>, my name is dzshn (pronounced <code>/ziː/</code>).
-        latina, trans, sapphic, minor, she/her, etc.<Ref cei /> <br />
+        latina, trans, sapphic, minor, she/her, etc.<Ref ce /> <br />
         <br />
         I like coding stuff, I also like making coding atrocities,<Ref cn />
         sometimes. <br />
