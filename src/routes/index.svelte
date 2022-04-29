@@ -3,12 +3,13 @@
     import Footer from "$lib/Footer.svelte";
 
     const links = [
-        ["mastodon", "https://toot.cat/@dzshn", "@dzshn@toot.cat", {"rel": "me"}],
-        ["email", "mailto:zshn@proton.me", "zshn@proton.me"],
-        ["github", "https://github.com/dzshn", "dzshn"],
-        ["telegram", "https://t.me/dzshn", "@dzshn"],
-        ["reddit", "https://reddit.com/u/dzsh", "u/dzsh"],
-        ["discord", "https://discord.gg/qXPm32cHUv", ".gg/qXPm32cHUv"],
+        ["https://toot.cat/@dzshn", "@dzshn@toot.cat", "fedi", { rel: "me" }],
+        ["mailto:me@dzshn.xyz", "me@dzshn.xyz", "email"],
+        ["mailto:dzshn@proton.me", "dzshn@proton.me", "backup"],
+        ["https://github.com/dzshn", "dzshn", "github"],
+        ["https://t.me/dzshn", "@dzshn", "telegram"],
+        ["https://reddit.com/u/dzsh", "u/dzsh", "reddit"],
+        ["https://discord.gg/qXPm32cHUv", "qXPm32cHUv", "discord"],
     ];
 </script>
 
@@ -32,8 +33,10 @@
     <h2>social stuff</h2>
     <p>you might find me here,,</p>
     <div class="socials">
-        {#each links as [name, href, title, extra]}
-            <a target="_blank" {href} {title} {...extra}>{name}</a>
+        {#each links as [href, name, ann, extras]}
+            <a target="_blank" {href} {...extras}>
+                {name} <i>[{ann}]</i>
+            </a>
         {/each}
     </div>
 </main>
@@ -81,14 +84,22 @@
         display: flex;
         font-family: "Fira Code", monospace;
         flex-wrap: wrap;
-        max-width: 320pt;
+        max-width: 640pt;
         min-width: 160pt;
     }
-    .socials * {
-        width: 160pt;
+    .socials > * {
+        width: 320pt;
     }
-    .socials *::before {
-        color: #e0e0e0;
-        content: "@ ";
+    .socials i {
+        color: #a0a0a0;
+    }
+    .socials a:hover i {
+        color: #b0b0b0;
+    }
+
+    @media (any-pointer: coarse) {
+        .socials > * {
+            padding: 4pt 0;
+        }
     }
 </style>
