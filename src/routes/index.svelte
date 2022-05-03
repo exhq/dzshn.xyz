@@ -5,11 +5,15 @@
     const links = [
         ["https://toot.cat/@dzshn", "@dzshn@toot.cat", "fedi", { rel: "me" }],
         ["mailto:me@dzshn.xyz", "me@dzshn.xyz", "email"],
-        ["mailto:dzshn@proton.me", "dzshn@proton.me", "backup"],
         ["https://github.com/dzshn", "dzshn", "github"],
         ["https://t.me/dzshn", "@dzshn", "telegram"],
         ["https://reddit.com/u/dzsh", "u/dzsh", "reddit"],
         ["https://discord.gg/qXPm32cHUv", "qXPm32cHUv", "discord"],
+        [
+            "https://keyoxide.org/EAE7D067D702BAA4627B5C1AEFF4B4B1AF6264DD",
+            "EFF4 B4B1 AF62 64DD",
+            "pgp",
+        ],
     ];
 </script>
 
@@ -30,8 +34,7 @@
             explain
         />
     </p>
-    <h2>social stuff</h2>
-    <p>you might find me here,,</p>
+    <h2>contact & socials</h2>
     <div class="socials">
         {#each links as [href, name, ann, extras]}
             <a target="_blank" {href} {...extras}>

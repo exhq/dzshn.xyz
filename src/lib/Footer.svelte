@@ -16,7 +16,6 @@
             [view source]
         </a>
     </span>
-    <span>(under construction!)</span>
 </footer>
 
 <style>
@@ -36,14 +35,14 @@
         color: #fb82bb;
     }
 
-    @media (min-width: 800pt) {
-        footer span:nth-child(1n + 2)::before {
+    @media (min-width: 600pt) {
+        footer > span:nth-child(1n + 2)::before {
             color: #a0a0a0;
             content: "-*- ";
         }
     }
 
-    @media (max-width: 800pt) {
+    @media (max-width: 600pt) {
         footer {
             display: flex;
             flex-direction: column;
