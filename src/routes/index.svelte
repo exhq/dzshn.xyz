@@ -14,6 +14,7 @@
             "EFF4 B4B1 AF62 64DD",
             "pgp",
         ],
+        ["https://www.patreon.com/dzshn", "donate!!!!!!", "patreon"],
     ];
 </script>
 
@@ -43,6 +44,7 @@
         {/each}
     </div>
 </main>
+<div id="cat">/ᐠ｡ꞈ｡ᐟ\</div>
 <Footer />
 
 <style>
@@ -99,10 +101,21 @@
     .socials a:hover i {
         color: #b0b0b0;
     }
+    .socials a[href="https://www.patreon.com/dzshn"]
+    {
+        font-weight: bold;
+    }
 
     @media (any-pointer: coarse) {
         .socials > * {
             padding: 4pt 0;
         }
+    }
+
+    #cat {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        transition: all 120s;
     }
 </style>
