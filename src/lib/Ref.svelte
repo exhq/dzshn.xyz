@@ -21,7 +21,7 @@
     }
 </script>
 
-<sup>[<i><a target="_blank" {href} {title}>{text}</a></i>]</sup>
+<wbr /><sup>[<i><a target="_blank" {href} {title}>{text}</a></i>]</sup>
 
 <style>
     sup {

@@ -64,6 +64,7 @@
 
     main {
         width: calc(100vw - 40px);
+        max-width: 800pt;
         margin: auto;
     }
 
@@ -116,6 +117,7 @@
         position: fixed;
         bottom: 0;
         right: 0;
+        user-select: none;
         transition: all 0.6s 12s ease-in;
     }
     #cat:hover {
