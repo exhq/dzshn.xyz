@@ -44,7 +44,7 @@
         {/each}
     </div>
 </main>
-<div id="cat">/ᐠ｡ꞈ｡ᐟ\</div>
+<div id="cat" aria-hidden="true">/ᐠ｡ꞈ｡ᐟ\</div>
 <Footer />
 
 <style>
@@ -116,6 +116,10 @@
         position: fixed;
         bottom: 0;
         right: 0;
-        transition: all 120s;
+        transition: all 0.6s 12s ease-in;
+    }
+    #cat:hover {
+        transform: translateY(10pt);
+        transition-delay: 0.6s;
     }
 </style>
