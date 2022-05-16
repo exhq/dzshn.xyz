@@ -26,13 +26,23 @@
     <h1>!?</h1>
     <p>
         <code>ヾ(^o^ )</code>, my name is dzshn (pronounced <code>/ziː/</code>).
-        latina, trans, sapphic, minor, she/her, etc.<Ref ce /> <br />
+        latina, trans, sapphic, minor, she/her, etc.<Ref
+            external
+            href="https://en.wikipedia.org/wiki/Portal:Current_events"
+            title="This statement refers to current events and needs references to newer reliable sources."
+            ref="may be outdated"
+        /> <br />
         <br />
-        I like coding stuff, I also like making coding atrocities,<Ref cn />
+        I like coding stuff, I also like making coding atrocities,<Ref
+            ref="a"
+        />
         sometimes. <br />
         I'm also into linguistics, some nlp and a bitter bit of webdev.<br />
         I was once terminally addicted to Tetris and now a part-time Tetris nerd.<Ref
-            explain
+            external
+            href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed"
+            title="This claim needs references to reliable sources."
+            ref="citation needed"
         />
     </p>
     <h2>contact & socials</h2>
@@ -43,6 +53,10 @@
             </a>
         {/each}
     </div>
+    <h2>notes</h2>
+    <ol style:list-style-type="lower-alpha">
+        <li><Ref note="a"><a href="/hell"><code>~/hell</code></a></Ref></li>
+    </ol>
 </main>
 <div id="cat" aria-hidden="true">/ᐠ｡ꞈ｡ᐟ\</div>
 <Footer />
@@ -55,7 +69,6 @@
         color: #e0e0e0;
         font-family: "Noto Sans";
         font-size: 16pt;
-        margin: 0;
     }
 
     code {
