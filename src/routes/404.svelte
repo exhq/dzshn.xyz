@@ -1,5 +1,5 @@
 <script>
-    import oh from "../assets/misery.png";
+    import oh from "$lib/assets/misery.png";
 </script>
 
 <main>
