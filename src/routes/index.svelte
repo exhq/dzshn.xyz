@@ -58,47 +58,8 @@
         <li><Ref note="a"><a href="/hell"><code>~/hell</code></a></Ref></li>
     </ol>
 </main>
-<div id="cat" aria-hidden="true">/ᐠ｡ꞈ｡ᐟ\</div>
-<Footer />
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans:wght@400;700&display=swap");
-
-    :root {
-        background: #151515;
-        color: #e0e0e0;
-        font-family: "Noto Sans";
-        font-size: 16pt;
-    }
-
-    code {
-        font-family: "Fira Code", monospace;
-    }
-
-    main {
-        width: calc(100vw - 40px);
-        max-width: 800pt;
-        margin: auto;
-    }
-
-    h1,
-    h2 {
-        border-bottom: 4px dotted #fa50a0;
-        font-family: "Fira Code", monospace;
-        padding: 20px 2px 0px;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-    }
-
-    a {
-        color: #fb69ad;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #fb82bb;
-    }
-
     .socials {
         display: flex;
         font-family: "Fira Code", monospace;
@@ -124,17 +85,5 @@
         .socials > * {
             padding: 4pt 0;
         }
-    }
-
-    #cat {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        user-select: none;
-        transition: all 0.6s 12s ease-in;
-    }
-    #cat:hover {
-        transform: translateY(10pt);
-        transition-delay: 0.6s;
     }
 </style>

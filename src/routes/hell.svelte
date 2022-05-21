@@ -120,45 +120,13 @@
 <Footer />
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans:wght@400;700&display=swap");
     @import url("prismjs/themes/prism-tomorrow");
-
-    :root {
-        background: #151515;
-        color: #e0e0e0;
-        font-family: "Noto Sans";
-        font-size: 16pt;
-    }
 
     main {
         width: calc(100vw - 40px);
         max-width: 1200pt;
         margin: auto;
         hyphens: auto;
-    }
-
-    h1,
-    h2,
-    h3 {
-        border-bottom: 4px dotted #fa50a0;
-        font-family: "Fira Code", monospace;
-        padding: 20px 2px 0px;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-    }
-
-    :global(a) {
-        color: #fb69ad;
-        text-decoration: none;
-    }
-    :global(a:hover) {
-        color: #fb82bb;
-    }
-
-    pre,
-    code {
-        font-family: "Fira Code", monospace;
     }
 
     .qa li::marker {
@@ -192,9 +160,6 @@
         font-size: 12pt;
         white-space: break-spaces;
         word-break: break-all;
-    }
-    :global(.snippet > code[class*="language-"]) {
-        background: none;
     }
 
     .tooltip {
