@@ -117,7 +117,6 @@
         {/each}
     </div>
 </main>
-<Footer />
 
 <style>
     @import url("prismjs/themes/prism-tomorrow");
