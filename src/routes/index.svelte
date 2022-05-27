@@ -37,7 +37,8 @@
             ref="a"
         />
         sometimes. <br />
-        I'm also into linguistics, some nlp and a bitter bit of webdev.<br />
+        I'm also quite a bit into linguistics. <span lang="tok">󱤴󱥡󱤉󱥬󱥔!</span>
+        <br />
         I was once terminally addicted to Tetris and now a part-time Tetris nerd.<Ref
             external
             href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed"

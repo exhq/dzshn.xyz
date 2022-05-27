@@ -9,6 +9,11 @@
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans:wght@400;700&display=swap");
 
+    @font-face {
+        src: url("$lib/assets/nasin-nanpa.otf");
+        font-family: "nasin-nanpa";
+    }
+
     :global(:root) {
         background: #151515;
         color: #e0e0e0;
@@ -18,6 +23,10 @@
 
     :global(code) {
         font-family: "Fira Code", monospace;
+    }
+
+    :global(:lang(tok)) {
+        font-family: "nasin-nanpa";
     }
 
     :global(main) {
