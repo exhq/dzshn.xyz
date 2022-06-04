@@ -1,10 +1,18 @@
 <script>
     import Footer from "$lib/Footer.svelte";
+    import { browser } from "$app/env";
+
+    if (browser) {
+        import("$lib/oneko.js/oneko-element.js").then(({ ONekoElement }) => {
+            customElements.define("o-neko", ONekoElement);
+        });
+    }
 </script>
 
 <slot />
 <div id="cat" aria-hidden="true">/ᐠ｡ꞈ｡ᐟ\</div>
 <Footer />
+<o-neko />
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans:wght@400;700&display=swap");
