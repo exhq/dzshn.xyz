@@ -1,5 +1,4 @@
 <script>
-    import Footer from "$lib/Footer.svelte";
     import Prism from "prismjs";
     import "prismjs/components/prism-python.js";
 

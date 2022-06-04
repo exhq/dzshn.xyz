@@ -1,6 +1,5 @@
 <script>
     import Ref from "$lib/Ref.svelte";
-    import Footer from "$lib/Footer.svelte";
 
     const links = [
         ["https://toot.cat/@dzshn", "@dzshn@toot.cat", "fedi", { rel: "me" }],
