@@ -91,7 +91,7 @@
     <div class="snippets">
         {#each snippets as { title, desc, lang, gist, file }}
             {#await fetch(file).then((r) => r.text()) then raw}
-                <div class="snippet" use:Prism.highlightAllUnder>
+                <div class="snippet" id={title} use:Prism.highlightAllUnder>
                     <h3>{title} <a target="_blank" href={gist}>[gist ↗]</a></h3>
                     <p>{@html desc}</p>
                     <pre><code class="language-{lang}">{raw}</code></pre>

@@ -2,18 +2,23 @@
     import Ref from "$lib/Ref.svelte";
 
     const links = [
+        ["https://www.patreon.com/dzshn", "donate!!!!!!", "patreon"],
         ["https://toot.cat/@dzshn", "@dzshn@toot.cat", "fedi", { rel: "me" }],
         ["mailto:me@dzshn.xyz", "me@dzshn.xyz", "email"],
         ["https://github.com/dzshn", "dzshn", "github"],
+        ["https://discord.gg/qXPm32cHUv", "ma tomo", "discord"],
         ["https://t.me/dzshn", "@dzshn", "telegram"],
         ["https://reddit.com/u/dzsh", "u/dzsh", "reddit"],
-        ["https://discord.gg/qXPm32cHUv", "qXPm32cHUv", "discord"],
         [
             "https://keyoxide.org/EAE7D067D702BAA4627B5C1AEFF4B4B1AF6264DD",
             "EFF4 B4B1 AF62 64DD",
             "pgp",
         ],
-        ["https://www.patreon.com/dzshn", "donate!!!!!!", "patreon"],
+        [
+            "https://matrix.to/#/@dzshn:catgirl.cloud",
+            "@dzshn:catgirl.cloud",
+            "matrix",
+        ],
     ];
 </script>
 
@@ -45,16 +50,17 @@
             ref="citation needed"
         />
     </p>
-    <h2>contact & socials</h2>
-    <div class="socials">
+    <h2>locate</h2>
+    <ul class="socials">
         {#each links as [href, name, ann, extras]}
-            <a target="_blank" {href} {...extras}>
-                {name} <i>[{ann}]</i>
-            </a>
+            <li>
+                <a target="_blank" {href} {...extras}>
+                    {name} <i>[{ann}]</i>
+                </a>
+            </li>
         {/each}
-    </div>
-    <h2>notes</h2>
-    <ol style:list-style-type="lower-alpha">
+    </ul>
+    <ol class="refs">
         <li><Ref note="a"><a href="/hell"><code>~/hell</code></a></Ref></li>
     </ol>
 </main>
@@ -79,6 +85,15 @@
     .socials a[href="https://www.patreon.com/dzshn"]
     {
         font-weight: bold;
+    }
+    .socials li::marker {
+        content: "* ";
+    }
+    .refs {
+        list-style-type: lower-alpha;
+        margin-top: 32pt;
+        padding-top: 8pt;
+        border-top: #303030 4px dotted;
     }
 
     @media (any-pointer: coarse) {
