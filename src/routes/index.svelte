@@ -1,6 +1,8 @@
 <script>
     import Ref from "$lib/Ref.svelte";
+    import { keydown } from "$lib/shh.js";
 
+    /** @type {[string, string, string, Object?][]} */
     const links = [
         ["https://www.patreon.com/dzshn", "donate!!!!!!", "patreon"],
         ["https://toot.cat/@dzshn", "@dzshn@toot.cat", "fedi", { rel: "me" }],
@@ -8,7 +10,6 @@
         ["https://github.com/dzshn", "dzshn", "github"],
         ["https://discord.gg/qXPm32cHUv", "ma tomo", "discord"],
         ["https://t.me/dzshn", "@dzshn", "telegram"],
-        ["https://reddit.com/u/dzsh", "u/dzsh", "reddit"],
         [
             "https://keyoxide.org/EAE7D067D702BAA4627B5C1AEFF4B4B1AF6264DD",
             "EFF4 B4B1 AF62 64DD",
@@ -25,6 +26,8 @@
 <svelte:head>
     <title>dzshn.xyz</title>
 </svelte:head>
+
+<svelte:window on:keydown={keydown} />
 
 <main>
     <h1>!?</h1>
