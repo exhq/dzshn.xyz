@@ -1,6 +1,8 @@
+//@ts-check
 import adapter from "@sveltejs/adapter-static";
 import path from "path";
 
+/** @type {import("@sveltejs/kit").Config} */
 export default {
     kit: {
         adapter: adapter(),
@@ -12,6 +14,7 @@ export default {
                 rollupOptions: {
                     plugins: [
                         {
+                            name: "fix-import-meta-url",
                             // 🥰
                             resolveImportMeta(property, { moduleId }) {
                                 if (property === "url") {

@@ -1,6 +1,5 @@
 <script>
     import { Tetris } from "$lib/shh/tetris.js";
-    //@ts-expect-error
     import hand from "$lib/shh/hand.png";
 
     /** @typedef {ReturnType<typeof setTimeout>} Timeout */

@@ -1,5 +1,3 @@
-// @ts-check
-
 /** @enum {number} */
 export const PieceType = Object.freeze({
     I: 1,
