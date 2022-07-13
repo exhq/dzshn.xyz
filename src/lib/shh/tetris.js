@@ -12,17 +12,19 @@ export const PieceType = Object.freeze({
 });
 
 /**
+ * @typedef {[number, number]} Coord
+ *
  * @typedef {Object} Piece
  * @prop {PieceType} type
  * @prop {number} x
  * @prop {number} y
  * @prop {number} r
- * @prop {[number, number][]} minos
-
+ * @prop {Coord[]} minos
+ *
  * @typedef {number[][]} Board
  */
 
-/** @type {{[type: PieceType]: [number, number][][]}} */
+/** @type Record<PieceType, Coord[][]> */
 // prettier-ignore
 const shapes = {
     [PieceType.I]: [
@@ -69,7 +71,9 @@ const shapes = {
     ],
 };
 
-/** @type {{[x: number]: [number, number][]}} */
+/** @typedef {Record<number, Coord[]>} KickTable */
+
+/** @type {KickTable} */
 // prettier-ignore
 const kickTable = {
     // a, b -> kickTable for a = initial and b = final rotation
@@ -88,7 +92,7 @@ const kickTable = {
     0b11_01: [ [+0, -1], [-2, -1], [-1, -1], [-2, +0], [-1, +0], ],
 };
 
-/** @type {{[x: number]: [number, number][]}} */
+/** @type {KickTable} */
 // prettier-ignore
 const kickTableI = {
     0b00_01: [ [+0, -1], [+0, +1], [+1, -2], [-2, +1], ],
@@ -107,10 +111,7 @@ const kickTableI = {
 
 /**
  * @param {Board} board
- * @param {Object} piece
- * @param {number} piece.x
- * @param {number} piece.y
- * @param {[number, number][]} piece.minos
+ * @param {Pick<Piece, "x" | "y" | "minos">} piece
  * @returns {boolean}
  */
 function overlaps(board, { x, y, minos }) {
@@ -159,10 +160,7 @@ export class Tetris {
     }
 
     /**
-     * @param {Object} piece
-     * @param {number} piece.x
-     * @param {number} piece.y
-     * @param {[number, number][]} piece.minos
+     * @param {Pick<Piece, "x" | "y" | "minos">} piece
      * @returns {boolean}
      */
     overlaps({ x, y, minos }) {

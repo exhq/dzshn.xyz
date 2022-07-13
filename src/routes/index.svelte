@@ -1,7 +1,7 @@
 <script>
     import Ref from "$lib/Ref.svelte";
 
-    /** @type {[string, string, string, Object?][]} */
+    /** @type {[string, string, string, Record<string, string>?][]} */
     const links = [
         ["https://www.patreon.com/dzshn", "donate!!!!!!", "patreon"],
         ["https://toot.cat/@dzshn", "@dzshn@toot.cat", "fedi", { rel: "me" }],
