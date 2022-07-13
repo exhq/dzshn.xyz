@@ -1,4 +1,5 @@
 <script>
+    import Shh from "$lib/shh/Shh.svelte";
     import { browser } from "$app/env";
 
     if (browser) {
@@ -8,6 +9,7 @@
     }
 </script>
 
+<Shh />
 <slot />
 <div id="cat" aria-hidden="true">/ᐠ｡ꞈ｡ᐟ\</div>
 <o-neko />

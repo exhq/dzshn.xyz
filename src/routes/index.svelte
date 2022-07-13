@@ -1,6 +1,5 @@
 <script>
     import Ref from "$lib/Ref.svelte";
-    import { keydown } from "$lib/shh.js";
 
     /** @type {[string, string, string, Object?][]} */
     const links = [
@@ -26,8 +25,6 @@
 <svelte:head>
     <title>dzshn.xyz</title>
 </svelte:head>
-
-<svelte:window on:keydown={keydown} />
 
 <main>
     <h1>!?</h1>
