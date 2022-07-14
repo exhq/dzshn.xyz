@@ -54,6 +54,15 @@
             file: "https://gist.githubusercontent.com/dzshn/c3530bee0dd89312aab1638bd2953da5/raw/mmmm.py",
         },
         {
+            title: "21.py",
+            desc: `
+                patch python so 9 + 10 is correct
+            `,
+            lang: "python",
+            gist: "https://gist.github.com/dzshn/8b57cc6f2984ed2dc422171d4a8f42e7",
+            file: "https://gist.githubusercontent.com/dzshn/8b57cc6f2984ed2dc422171d4a8f42e7/raw/21.py",
+        },
+        {
             title: "m.py",
             desc: `
                 a bit of sillying with a simple mandelbrot code
