@@ -48,6 +48,14 @@
         font-size: 16pt;
     }
 
+    :global(html) {
+        cursor: url("$lib/assets/cursor.png"), auto;
+    }
+
+    :global(:link, :visited) {
+        cursor: url("$lib/assets/cursor_pointer.png"), pointer;
+    }
+
     :global(code) {
         font-family: "Fira Code", monospace;
     }

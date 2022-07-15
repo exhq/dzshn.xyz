@@ -311,15 +311,13 @@
         right: 8pt;
     }
     .tooltip {
+        cursor: url("$lib/assets/cursor_help.png"), help;
         position: absolute;
         bottom: 0;
         left: 0;
         user-select: none;
         margin: 1ch;
         border-bottom: 2px dotted #808080;
-    }
-    .tooltip:hover {
-        cursor: help;
     }
     .open-tooltip {
         border: none;
