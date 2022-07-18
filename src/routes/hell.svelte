@@ -14,6 +14,16 @@
             file: "https://gist.githubusercontent.com/dzshn/1b8853023f364dc559c2b11c6a5f38b7/raw/hewwo.py",
         },
         {
+            title: "Q_rsqrt.py",
+            desc: `
+                perhaps the most awful snippet here. I love it <br>
+                Quake's Fast inverse square root in inlined python bytecode.
+            `,
+            lang: "python",
+            gist: "https://gist.github.com/dzshn/72cd5e81e7fc500f397cf5b029b16199",
+            file: "https://gist.githubusercontent.com/dzshn/72cd5e81e7fc500f397cf5b029b16199/raw/Q_rsqrt.py",
+        },
+        {
             title: "tetr.py",
             desc: `
                 a full guideline tetris [n]curses TUI in one comically large line. yes, it is
