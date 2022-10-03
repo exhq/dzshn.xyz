@@ -24,6 +24,16 @@
             file: "https://gist.githubusercontent.com/dzshn/72cd5e81e7fc500f397cf5b029b16199/raw/Q_rsqrt.py",
         },
         {
+            title: "mutable_code.py",
+            desc: `
+                making this code <a target="_blank" href="https://imgur.com/G31jFFa">managed to kill an immortal object</a> <br>
+                i am not sorry for my actions
+            `,
+            lang: "python",
+            gist: "https://gist.github.com/dzshn/476137824c14fc66677ec39099d6cf33",
+            file: "https://gist.githubusercontent.com/dzshn/476137824c14fc66677ec39099d6cf33/raw/mutable_code.py",
+        },
+        {
             title: "tetr.py",
             desc: `
                 a full guideline tetris [n]curses TUI in one comically large line. yes, it is
