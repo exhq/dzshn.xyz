@@ -1,1 +1,3 @@
-svelte is pretty cool
+# dzshn.xyz
+
+svelte my beloved

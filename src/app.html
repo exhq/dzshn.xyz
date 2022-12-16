@@ -1,28 +1,23 @@
 <!--
-            ‌   ／l、
-  THIS cat.  （ﾟ､ ｡ ７
-               l、 ~ヽ
-               じしf_,)ノ
+  ／l、
+（ﾟ､ ｡ ７  THIS cta.
+  l、 ~ヽ
+  じしf_,)ノ
 --->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="author" content="Sofia (dzshn) <me@dzshn.xyz>" />
-        <meta name="description" content="ヾ(^o^ )" />
-        <meta name="theme-color" content="#fa50a0" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="dzshn.xyz" />
-        <meta name="twitter:description" content="ヾ(^o^ )" />
-        <meta name="og:title" content="dzshn.xyz" />
-        <meta name="og:description" content="ヾ(^o^ )" />
-        <link rel="icon" type="image/png" href="/icon.png" />
+	<head>
+		<meta charset="utf-8" />
+        <meta name="author" content="Sofia Lima <me@dzshn.xyz>" />
+		<meta name="viewport" content="width=device-width" />
+        <meta name="og:image" content="https://dzshn.xyz/ohthe.png" />
+        <meta name="theme-color" content="#fb82bb" />
+		<link rel="icon" href="favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        %svelte.head%
-    </head>
-    <body>
-        %svelte.body%
-    </body>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
 </html>
