@@ -27,7 +27,7 @@
 <main>
     <h1>?!</h1>
     <p>
-        <code role="img" aria-label="hello">ヾ(^o^ )</code>, I'm dzshn! I code silly things sometimes,<sup class="ref">[<a href="https://en.wikipedia.org/wiki/WP:Vagueness"><i>vague</i></a>]</sup> mainly in Python or <abbr title="typescript">TS</abbr>. I listen to all sorts<sup class="ref">[<a href="/talk#music"><i>disputed – discuss</i></a>]</sup> of music while I'm at it. Other than coding, linux stuff and some reverse engineering, I'm also really interested in linguistics. may or may not be a cat
+        <code role="img" aria-label="hello">ヾ(^o^ )</code>, I'm dzshn! I code silly things sometimes,<sup class="ref">[<a href="https://en.wikipedia.org/wiki/WP:Vagueness"><i>vague</i></a>]</sup> mainly in Python or <abbr title="typescript">TS</abbr>. I listen to all sorts<sup class="ref">[<a href="https://en.wikipedia.org/wiki/WP:CON"><i>disputed <a href="/talk#music">–</a> discuss</i></a>]</sup> of music while I'm at it. Other than linux stuff and<sup class="ref"><a href="/dots">[1]</a></sup> coding, I'm really into linguistics. may or may not be a cat.
         <br /> <br />
         tran gener people r cool btw any pronouns are fine (also my username is pronounced <code>/zi:/</code>)
         <br /> <br />
