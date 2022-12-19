@@ -2,6 +2,7 @@
     // a little obfuscation is ok
 
     import meow from "$lib/shh";
+    import Oneko from "$lib/oneko.svelte";
 
     let huh: string[] = [];
     let uhm = false;
@@ -28,6 +29,8 @@
 
     function destroy() { uhm = false; huh = []; }
 </script>
+
+<Oneko />
 
 <svelte:window on:keydown={shh} />
 <svelte:component this={meow[guh]} {destroy} />
