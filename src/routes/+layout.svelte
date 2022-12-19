@@ -53,17 +53,22 @@
 </footer>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans:wght@400;700&display=swap');
+    /* Fonts:
+     * - Noto Sans (Regular, Bold, Italic): global font
+     * - Fira Code (Regular, Bold): monospace font
+     * - Noto Sans Mono (Regular): fallback monospace
+     */
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans+Mono&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
     :root {
         background: #151515;
         color: #f0f0f0;
-        font-family: "Noto Sans";
+        font-family: "Noto Sans", sans-serif;
     }
 
     :global(a) {
         color: #fb82bb;
-        font-family: "Fira Code";
+        font-family: "Fira Code", monospace;
         text-decoration: none;
     }
     :global(a:hover) {
@@ -71,15 +76,21 @@
     }
 
     :global(li::marker) {
-        content: "* ";
         color: #a0a0a0;
-        font-family: "Fira Code";
+        font-family: "Fira Code", monospace;
+    }
+    :global(ul li::marker) {
+        content: "* ";
     }
 
     :global(h1, h2, h3, h4) {
-        font-family: "Fira Code";
+        font-family: "Fira Code", monospace;
         border-bottom: 3px dotted #fa50a0;
         width: fit-content;
+    }
+
+    :global(code, pre) {
+        font-family: "Fira Code", "Noto Sans Mono", monospace;
     }
 
     footer a {
