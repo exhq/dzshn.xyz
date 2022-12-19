@@ -1,6 +1,6 @@
 <svelte:head>
     <title>my system - dzshn.xyz</title>
-    <meta name="og:title" content="Talk:dzshn.xyz" />
+    <meta name="og:title" content="me system" />
     <meta name="og:description" content="yes i use arch and yes i will explod" />
 </svelte:head>
 

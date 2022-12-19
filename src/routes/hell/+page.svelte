@@ -106,6 +106,12 @@
     }
 </script>
 
+<svelte:head>
+    <title>hell</title>
+    <meta name="og:title" content="hell" />
+    <meta name="og:description" content="import ctypes jumpscare" />
+</svelte:head>
+
 <main>
     <h1>Welcome to hell!!!</h1>
     <p>
